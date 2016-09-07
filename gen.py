@@ -20,7 +20,7 @@ def last_digit(number): # Luhn
 
 def gen_num():
     control_range = range(0,10)
-    year = str(random.choice(year_range)).zfill(2)
+    year = str(random.choice(year_range))[2:]
     month = str(random.choice(month_range)).zfill(2)
     day = str(random.choice(days(int(year),int(month)))).zfill(2)
     
